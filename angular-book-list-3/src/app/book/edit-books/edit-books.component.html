@@ -10,3 +10,28 @@
   <div><span>classification: </span>{{ sampleBook.type }}</div>
   <div><span>notes: </span>{{ sampleBook.summary }}</div>
 </div>
+<div class="p-6">
+  <div>
+    <label for="title">Book title: </label>
+    <input
+      id="title"
+      type="text"
+      [(ngModel)]="sampleBook.title"
+      placeholder="Enter book title"
+    />
+  </div>
+  <br />
+  <hr />
+  <br />
+
+  <h2>The Books</h2>
+
+  <ul class="books">
+    <li *ngFor="let book of readingList">
+      <button type="button">
+        <span class="badge">{{ book.id }} - </span>
+        <span class="name">{{ book.title }}</span>
+      </button>
+    </li>
+  </ul>
+</div>
