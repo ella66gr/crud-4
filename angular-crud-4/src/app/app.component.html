@@ -1,0 +1,18 @@
+<!-- app.component.html -->
+<div class="bg-cyan-900 p-6">
+  <h1 class="font-mono font-semibold text-left text-cyan-100">
+    Book List CRUD 4 Example
+  </h1>
+</div>
+<div class="grid grid-cols-2 gap-0">
+  <!--** BOOK LIST **-->
+  <div>
+    <app-list-books></app-list-books>
+  </div>
+  <!--** ADD / DELETE / UPDATE **-->
+  <div>
+    <app-add-book [bookUpdated]="bookUpdatedEvent"></app-add-book>
+    <app-update-book (bookUpdated)="(bookUpdatedEvent)"></app-update-book>
+    <app-delete-book></app-delete-book>
+  </div>
+</div>

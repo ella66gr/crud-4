@@ -1,0 +1,44 @@
+{
+  "books": [
+    {
+      "id": "ygr74",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee"
+    },
+    {
+      "id": "fDrp4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen"
+    },
+    {
+      "id": "bgr74",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë"
+    },
+    {
+      "id": "y&kl4",
+      "title": "Green Eggs and Ham",
+      "author": "Dr Seuss"
+    },
+    {
+      "id": "vMH74",
+      "title": "Don't Look Up",
+      "author": "Adam McKay"
+    },
+    {
+      "id": "ygP2W",
+      "title": "The Meme Machine",
+      "author": "Susan Blackmore"
+    },
+    {
+      "id": "yLj4E",
+      "title": "Seventh Heaven",
+      "author": "Arnold Case"
+    },
+    {
+      "id": "NgJ44",
+      "title": "The Brain Drain",
+      "author": "Annette Climber"
+    }
+  ]
+}

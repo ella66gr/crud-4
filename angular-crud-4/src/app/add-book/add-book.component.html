@@ -1,0 +1,15 @@
+<!-- add-book.component.html-->
+<div class="p-6 bg-zinc-100">
+  <h2 class="font-bold font-mono">Add Book:</h2>
+  <input [(ngModel)]="newBook.title" placeholder="Title" />
+  <input [(ngModel)]="newBook.author" placeholder="Author" />
+  <button
+    class="bg-green-500 drop-shadow-md text-white border-1 border-green-000 p-2 m-2 rounded-lg w-32"
+    (click)="onAddBook()"
+  >
+    Add Book
+  </button>
+</div>
+<div class="p-6 bg-zinc-100">
+  {{ successMessage }}
+</div>

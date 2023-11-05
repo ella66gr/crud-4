@@ -1,0 +1,21 @@
+<div class="p-0">
+  <div>
+    <div class="bg-zinc-100 p-6 min-h-screen">
+      <h2 class="font-bold font-mono">Book List:</h2>
+      <ul class="books">
+        <li *ngFor="let fishCake of ellaBooks$ | async">
+          <!-- the async pipe is used to subscribe to ellaBooks$ and update the list whenever a new value is emitted. -->
+          <button type="button">
+            <span class="badge">ID: {{ fishCake.id }} </span>
+            <span class="text-slate-900">- </span>
+            <span class="name text-purple-700 font-mono"
+              >{{ fishCake.title }}
+            </span>
+            <span class="badge text-slate-900 font-mono"></span>
+            {{ fishCake.author }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

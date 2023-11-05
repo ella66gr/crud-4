@@ -1,0 +1,21 @@
+<div class="p-6 bg-zinc-100">
+  <h2 class="font-bold font-mono">Delete by ID:</h2>
+  <form (submit)="$event.preventDefault(); deleteBook()">
+    <input
+      [(ngModel)]="bookId"
+      placeholder="Book ID"
+      [ngModelOptions]="{ standalone: true }"
+    />
+
+    <button
+      type="submit"
+      class="bg-red-800 drop-shadow-md text-white border-1 border-green-000 p-2 m-2 rounded-lg w-32"
+    >
+      Delete Book
+    </button>
+  </form>
+</div>
+<div class="p-6 bg-zinc-100 min-h-screen">
+  {{ bookErrorMessage }}
+  {{ deleteSuccessMessage }}
+</div>

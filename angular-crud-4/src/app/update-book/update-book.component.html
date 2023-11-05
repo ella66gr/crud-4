@@ -1,0 +1,43 @@
+<!-- update-book.component.html -->
+<div class="p-6 bg-zinc-100">
+  <h2 class="font-bold font-mono">Update by ID:</h2>
+  <form>
+    <input
+      [(ngModel)]="bookId"
+      placeholder="Book ID"
+      [ngModelOptions]="{ standalone: true }"
+    />
+  </form>
+  <form>
+    <input
+      [(ngModel)]="book.title"
+      placeholder="Title"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <input
+      [(ngModel)]="book.author"
+      placeholder="Author"
+      [ngModelOptions]="{ standalone: true }"
+    />
+    <button
+      class="bg-green-500 drop-shadow-md text-white border-1 border-green-000 p-2 m-2 rounded-lg w-32"
+      (click)="updateBook()"
+    >
+      Update Book
+    </button>
+  </form>
+</div>
+<div class="p-6 bg-zinc-100">
+  {{ bookErrorMessage }}
+  {{ successMessage }}
+</div>
+
+<!--
+  The input tag creates an input field where the user can enter text.
+
+The [(ngModel)] directive is used for two-way data binding, which means that changes to the input field will update the book.title property in the component's TypeScript code, and changes to book.title in the TypeScript code will update the input field.
+
+The placeholder attribute sets the placeholder text that appears in the input field when it is empty.
+
+The [ngModelOptions] attribute is used to configure the ngModel directive. In this case, standalone: true is set to prevent the ngModel directive from registering with a parent form. This is useful when you want to use ngModel outside of a form element.
+-->
